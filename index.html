@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConverCoin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="imagex/png" href="./img/banking-coin-svgrepo-com.svg">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <img class="menu" src="https://www.svgrepo.com/show/331913/menu.svg">
+    </nav>
+
+  </header>
+
+  <main>
+    <article>
+      <img src="./img/moedas.png">
+      <h1>Conver<span>Coin</span></h1>
+      <p>ConverCoin é um site de
+        conversão de moedas,
+        oferecendo taxas de câmbio
+        atualizadas em tempo real.
+        Rápido e fácil de usar.</p>
+    </article>
+
+    <form>
+      <div class="flag1">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/US_flag_49_stars.svg/800px-US_flag_49_stars.svg.png"
+          alt="Bandeira-de-um-país">
+      </div>
+
+      <section class="container">
+        <label class="titulo-form">
+          <h3>Conversão</h3>
+        </label>
+
+        <input class="valor" min="1" step="any" type="number" max="999999999" min="0" placeholder="R$ 10.000">
+        <input class="convertedValue" readonly placeholder="Valor">
+      </section>
+
+        <label class="seletores">
+
+          <input class="input-selector1" list="moedas" name="first" />
+          <datalist id="moedas">
+            <option value="Dolar">
+            <option value="Real">
+            <option value="Bitcoin">
+          </datalist>
+          <img class="seta" src="https://www.svgrepo.com/show/491324/arrow-small-right.svg" alt="seta">
+
+          <input class="input-selector2" list="moedas" name="first" />
+        </label>
+
+      </div>
+
+      <div class="flag2">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2000px-Flag_of_Brazil.svg.png"
+          alt="Bandeira-de-um-país">
+      </div>
+    </form>
+  </main>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
