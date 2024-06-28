@@ -37,7 +37,7 @@
 
     <form>
       <div class="flag1">
-        <img
+        <img id="imgUp"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/US_flag_49_stars.svg/800px-US_flag_49_stars.svg.png"
           alt="Bandeira-de-um-país">
       </div>
@@ -53,16 +53,20 @@
 
         <label class="seletores">
 
-          <select class="currency-select">
-            <option>US$ Dólar americano</option>
-            <option>€ Euro</option>
+          <select class="currency-selectFrom" id="currency-select">
+            <option value="empty"></option>
+            <option value="real">R$ Real brasileiro</option>
+            <option value="dolar">US$ Dólar americano</option>
+            <option value="euro">€ Euro</option>
           </select>
-          
+
           <img class="seta" src="https://www.svgrepo.com/show/491324/arrow-small-right.svg" alt="seta">
 
-          <select class="currency-select">
-            <option>US$ Dólar americano</option>
-            <option>€ Euro</option>
+          <select class="currency-selectTo" id="currency-select">
+            <option value="empty"></option>
+            <option value="real">R$ Real brasileiro</option>
+            <option value="dolar">US$ Dólar americano</option>
+            <option value="euro">€ Euro</option>
           </select>
 
         </label>
@@ -70,7 +74,7 @@
       </div>
 
       <div class="flag2">
-        <img
+        <img id="imgDown"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2000px-Flag_of_Brazil.svg.png"
           alt="Bandeira-de-um-país">
       </div>
