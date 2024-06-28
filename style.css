@@ -145,7 +145,18 @@ input {
   border: solid 4px #eee;
 }
 
-
+.currency-select {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 0px;
+  padding: 20px;
+  width: 100%;
+  height: 75px;
+  border-radius: 50px;
+  border: solid 4px #e8e8e8;
+  appearance: none;
+}
 
 form input:focus {
   outline: none;
@@ -167,17 +178,6 @@ form input:focus {
 
 }
 
-.input-selector1, .input-selector2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 27px;
-  margin-top: 0px;
-  padding-right: 10px;
-  width: 100%;
-  height: 75px;
-  border-radius: 50px;
-  border: solid 4px #e8e8e8;
-}
 
 .seta {
 
