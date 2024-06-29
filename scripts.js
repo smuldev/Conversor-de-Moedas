@@ -45,6 +45,8 @@ function changeFlag() {
   if (currencySelectTo.value == "real") {
     imgDown.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2000px-Flag_of_Brazil.svg.png'
   }
+
+  keypress()
 }
 
 
