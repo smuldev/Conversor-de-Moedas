@@ -147,13 +147,17 @@ input {
   position: relative;
   z-index: 1;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   padding-left: 25px;
   height: 110px;
   width: 100%;
   border-radius: 30px;
   border: none;
   border: solid 4px #dadada;
+}
+
+#alert {
+  display: none;
 }
 
 #currency-select {
