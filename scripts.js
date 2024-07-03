@@ -42,7 +42,7 @@ function changeFlag() {
   }
 
   if (currencySelectFrom.value == "dolar") {
-    imgUp.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/US_flag_49_stars.svg/800px-US_flag_49_stars.svg.png'
+    imgUp.src = './img/us-flag.png'
   }
 
   if (currencySelectFrom.value == "real") {
@@ -60,7 +60,7 @@ function changeFlag() {
   }
 
   if (currencySelectTo.value == "dolar") {
-    imgDown.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/US_flag_49_stars.svg/800px-US_flag_49_stars.svg.png'
+    imgDown.src = './img/us-flag.png'
   }
 
   if (currencySelectTo.value == "real") {
@@ -195,8 +195,10 @@ if (currencySelectFrom.value == "real" && currencySelectTo.value == "real") { //
 
  if (currencySelectTo.value == "empty") {
   alert.style.display = 'block'
+  alert.style.opacity = '1'
 } else { ;
   alert.style.display = "none"
+  alert.style.opacity = '0'
 }
 
 }

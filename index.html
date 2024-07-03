@@ -21,6 +21,7 @@
 
     <nav>
       <img class="menu" src="https://www.svgrepo.com/show/331913/menu.svg">
+      <a>Suporte</a>  
     </nav>
 
   </header>
@@ -39,21 +40,24 @@
     <form>
       <div class="flag1">
         <img id="imgUp"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/US_flag_49_stars.svg/800px-US_flag_49_stars.svg.png"
+          src="./img/us-flag.png"
           alt="Bandeira-de-um-país">
       </div>
 
       
       <div id="alert" class="alert alert-danger" role="alert">
-        <b>   Selecione para qual moeda deseja converter!   </b>
+        <b>  Selecione para qual moeda <br> deseja converter!   </b>
       </div>
 
       <section class="container">
+        <div id="alert" class="alert alert-danger" role="alert">
+          <b>  Selecione para qual moeda <br> deseja converter!   </b>
+        </div>
         <label class="titulo-form">
           <h3>Conversão</h3>
         </label>
 
-        <input class="valor" min="1" step="any" type="number" max="999999999" min="0" placeholder="Primeiro, escolha a moeda">
+        <input class="valor" min="1" step="any" type="number" max="999999999" min="0" placeholder="Escolha uma moeda">
         <input class="convertedValue" readonly placeholder="Valor">
       </section>
 
