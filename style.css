@@ -5,6 +5,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 100vh;
+}
 
 .menu {
   margin-top: 30px;
@@ -20,14 +26,13 @@ header {
 article {
   display: flex;
   position: relative;
-  margin-right: 300px;
+  margin-right: 100px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 30vw;
   height: 100vh;
   animation: fadeIn 2s ease 0s 1 normal forwards;
-
 }
 
 article img {
@@ -60,14 +65,13 @@ article p {
   font-weight: 500;
   margin-top: 50px;
   line-height: 35px;
-  
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
 }
 
@@ -82,10 +86,10 @@ form {
   background: #f2f2f2;
   border: solid 4px #dadada;
   padding: 40px;
-  
 }
 
 nav a {
+  cursor: pointer;
   margin-right: 30px;
   font-size: 15px;
   font-weight: 600;
@@ -93,8 +97,7 @@ nav a {
   padding: 7px;
   height: 40px;
   width: 90px;
-  border-radius: 10px;
-  background-color: #f5f5f5;
+  border-radius: 50px;
   border: solid 2px rgb(239, 239, 239);
 }
 
@@ -193,8 +196,7 @@ input {
   text-align: center;
   font-weight: 600;
   font-size: 25px;
-  margin-top: 0px;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   height: 75px;
   border-radius: 50px;
@@ -225,10 +227,22 @@ form input:focus {
   width: 50px
 }
 
+footer {
+  display: none;
+}
+
+.earth {
+  display: none;
+}
+
 @media (max-width: 1200px) {
 
+  body {
+    display: block;
+  }
+
   .seletores {
-    margin-bottom: 48vh;
+    transform: translateY(-200px);
     position: absolute;
     font-size: 20px;
   }
@@ -271,13 +285,12 @@ form input:focus {
   }
 
   main {
+    position: static;
     width: 100vw;
-    height: 100vh;
+    margin-top: 250px;
+    height: 200px;
     display: flex;
-    align-items: center;
     flex-direction: column-reverse;
-    justify-content: center;
-    padding-top: 20vh;
   }
 
   article img {
@@ -285,28 +298,37 @@ form input:focus {
   }  
 
   article {
+    position: relative;
     width: 100vw;
-    margin: 0 auto;
+    margin: 20px auto;
+    height: 900px;
     text-align: center;
   }
 
   article h1 {
-    font-size: 13vw;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    font-size: 10vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   article p {
     display: block;
     text-align: center;
-    width: 50%;
+    width: 60%;
+    height: 50px;
     margin: 0 auto;
+    font-weight: 600;
     line-height: 20px;
     font-size: 15px;
   }
 
+  .earth {
+    display: block;
+    margin-top: 100px;
+  }
+
   #alert {
-    transform: translateY(35px);
+    transform: translateY(38px);
     font-size: 13px;
     color: #ffda6a;
     border: solid 1px #ffda6a;
@@ -316,16 +338,23 @@ form input:focus {
     width: 100%;
     line-height: 15px;
     border-radius: 5px;
-    margin-bottom: 20px;
     padding: 10px;
   }
 
+  .line {
+    width: 65vw;
+    height: 4px;
+    border-radius: 50px ;
+    background-color: #d9d9d9;
+  }
+
   form {
-    height: 50vh;
+    position: static;
+    height: 300px;
     width: 75%;
-    padding-top: 0px;
     padding: 5px;
     padding-bottom: 45px;
+    margin-bottom: 150px;
     border-radius: 10px;
     border: solid 2px #dadada;
   }
@@ -333,7 +362,7 @@ form input:focus {
   .flag1 {
     display: flex;
     align-items: center;
-    transform: translateY(15px);
+    transform: translateY(18px);
     top: auto;
     width: 8%;
     left: 0px;
@@ -350,7 +379,7 @@ form input:focus {
   .flag2 {
     display: flex;
     align-items: center;
-    transform: translateY(15px);
+    transform: translateY(18px);
     top: auto;
     margin: auto;
     width: 8%;
@@ -371,6 +400,21 @@ form input:focus {
     margin-left: 30px;
   }
 
+  footer {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    text-align: start;
+    font-size: 10px;
+    padding: 20px;
+    line-height: 20px;
+    width: 100vw;
+    height: 90px;
+    border: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 95%, rgb(239, 239, 239) 100%, rgba(3,3,3,1) 100%);
+  }
+
   nav a {
     margin-right: 30px;
     font-size: 15px;
@@ -379,27 +423,24 @@ form input:focus {
     padding: 7px;
     height: 40px;
     width: 90px;
-    border-radius: 10px;
-    background-color: #f5f5f5;
+    border-radius: 50px;
     border: solid 2px rgb(239, 239, 239);
   }
 
   nav {
+    position: sticky;
+    top: 0px;
     width: 100vw;
     height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-@media (max-height: 700px) {
-  main {
-    padding-top: 40vh;
   }
 
-  .seletores {
-    margin-bottom: 400px;
+  header {
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    background-color: #fdfdfd;
+    filter: drop-shadow(0px 0px 10px #f2f2f2 );
+    border-radius: 0px 0px 10px 10px;
   }
 }
 

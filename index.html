@@ -12,7 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="shortcut icon" type="imagex/png" href="./img/banking-coin-svgrepo-com.svg">
-  
+  <meta name="theme-color" content="#dadada">
+  <meta name="msapplication-navbutton-color" content="#dadada">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#dadada">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101010">
 </head>
 
 <body>
@@ -27,16 +30,7 @@
   </header>
 
   <main>
-    <article>
-      <img src="./img/moedas.png">
-      <h1>Conver<span>Coin</span></h1>
-      <p>ConverCoin é um site de
-        conversão de moedas,
-        oferecendo taxas de câmbio
-        atualizadas em tempo real.
-        Rápido e fácil de usar.</p>
-    </article>
-
+    
     <form>
       <div class="flag1">
         <img id="imgUp"
@@ -46,7 +40,7 @@
 
       
       <div id="alert" class="alert alert-danger" role="alert">
-        <b>  Selecione para qual moeda <br> deseja converter!   </b>
+        <b>  Selecione qual moeda <br> deseja converter!   </b>
       </div>
 
       <section class="container">
@@ -83,16 +77,44 @@
 
         </label>
 
+        
       </div>
 
       <div class="flag2">
         <img id="imgDown"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2000px-Flag_of_Brazil.svg.png"
           alt="Bandeira-de-um-país">
+          
       </div>
     </form>
+
+    
   </main>
+  <article>
+    <img src="./img/moedas.png">
+    <div class="line"></div>
+    <h1>Conver<span>Coin</span></h1>
+    <p>ConverCoin é um site de
+      conversão de moedas,
+      oferecendo taxas de câmbio
+      atualizadas em tempo real.
+      Rápido e fácil de usar.</p>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/8e378d42-878b-408b-b7ed-a226eabbe1fb/4pSNG7ubdu.json" class="earth" background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay></dotlottie-player>
+    <footer>
+      © 2024 Conver Coin. <br>Todos os direitos reservados.
+      <ul>
+        <li>E-mail: suporte@convercoin.com</li>
+        <li>Telefone: +55(11) 1234-56789</li>
+        <li>Endereço: Av. das Nações Unidas, 123, São Paulo, SP, Brasil</li>
+      </ul>
+    </footer>
+  </article>
   
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
